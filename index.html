@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Clone of Slack</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Rules for sizing the icon. */
+        .material-icons.md-8 {
+            font-size: 8px;
+        }
+
+        .material-icons.md-15 {
+            font-size: 15px;
+        }
+
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+
+        /* Rules for using icons as black on a light background. */
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+
+        /* Rules for using icons as white on a dark background. */
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .material-icons.md-green {
+            color: rgba(0, 128, 0, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="item0">
+            <button><i class="material-icons md-light md-24 md-inactive">schedule</i></button>
+            <input type="text" class="top-input" placeholder="Search">
+            <button><i class="material-icons md-light md-24 md-inactive">help_outline</i></button>
+            <button class="person"><i class="material-icons">person</i></button>
+
+        </div>
+
+        <div id="item1">
+            <div id="top1" class="border-top-bottom">
+                <div id="group"><b>ManeZeneca</b></div>
+                <div id="user"><i class="material-icons md-green md-8">circle</i>Faris</div>
+                <button id="edit"><i class="material-icons">edit</i></button>
+            </div>
+            <div><button><i class="material-icons md-15">comment</i>Thread</button></div>
+            <div><button><i class="material-icons md-15">alternate_email</i>Mentions & Reactions</button></div>
+            <div><button><i class="material-icons md-15">more_vert</i>More</button></div>
+            <div class="border-top-bottom"><button onclick="toggle()"><i
+                        class="material-icons md-15">arrow_drop_down</i>Channels</button></div>
+            <div id="add" class="border-bottom" style="display: none"><button style="margin-left: 10px"
+                    onclick="show()"><i class="material-icons md-15">add</i>Add Channel</button></div>
+            <div class="border-bottom"><button><i class="material-icons md-15">arrow_drop_down</i>Direct
+                    Messages</button></div>
+            <button id="logout" style="text-align: center">Logout</button>
+        </div>
+
+        <div id="item2">
+            <div id="item4">
+                <img src="logo.png" width="100px" alt="logo">
+                <h1>Welcome to Slack</h1>
+                <p>Slack brinds all your team communication into one place, makes it all instantly <br> searchable
+                    and available wherever you go.</p>
+                <p>Our aim is to make your working life simpler, more pleasant and more productive</p>
+                <button class="create-channel" onclick="show()">Create Channel</button>
+            </div>
+            <div id="item5">
+                <img src="logo.png" width="100px" alt="logo">
+                <h1>Add New Channel</h1>
+                <div class="input-container">
+                    <input class="page3-input" type="text" placeholder="Channel name">
+                    <select class="page3-input">
+                        <option>Select Privacy...</option>
+                        <option>Private</option>
+                        <option>Public</option>
+                    </select>
+                </div>
+                <button class="create-channel">Create Channel</button>
+            </div>
+        </div>
+        <div id="item3">
+            <div id="top2">
+                <button><i class="material-icons md-dark">tag</i></button>
+                <button><i class="material-icons md-dark">star</i></button>
+                <button style="position: absolute;right: 40px"><i class="material-icons md-dark">person_add</i></button>
+                <button style="position: absolute;right: 0"><i class="material-icons md-dark">info</i></button>
+            </div>
+            <input class="message-section" type="text" placeholder="Write here...">
+        </div>
+
+
+    </div>
+</body>
+
+</html>
